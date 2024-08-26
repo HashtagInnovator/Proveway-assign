@@ -1,0 +1,95 @@
+/* nightmode.css */
+
+.night-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 100%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #FF6B82;
+    transition: opacity 0.3s ease;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+  
+  .night-mode-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  /* Night Mode Styles */
+  .night-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .night-mode .product-offer {
+    background-color: #2a2a2a;
+    box-shadow: 0px 0px 30px rgba(255, 107, 130, 0.7);
+  }
+  
+  .night-mode h2 {
+    color: #FF8B9D;
+  }
+  
+  .night-mode .offer-option {
+    border-color: #444;
+    background-color: #333;
+  }
+  
+  .night-mode .offer-option:hover,
+  .night-mode .offer-option.selected {
+    border-color: #FF8B9D;
+    background-color: #3a3a3a;
+  }
+  
+  .night-mode .discount {
+    background-color: #FF8B9D;
+  }
+  
+  .night-mode .text-pumper {
+    color: #FF8B9D;
+  }
+  
+  .night-mode .popular-tag {
+    color: #FF8B9D;
+  }
+  
+  .night-mode select {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #444;
+  }
+  
+  .night-mode .add-to-cart {
+    background-color: #FF8B9D;
+  }
+  
+  .night-mode .add-to-cart:hover {
+    background-color: #ff7a8c;
+  }
+  
+  .night-mode .powered-by {
+    color: #888;
+  }
+  
+  .night-mode .offer-option.selected {
+    box-shadow: 0 0 10px rgba(255, 139, 157, 0.3);
+  }
+  
+  .night-mode * {
+    transition: all 0.3s ease;
+  }
+  
+  
+  .night-mode .loading-spinner {
+    border-color: rgba(255, 139, 157, 0.3);
+    border-top-color: #FF8B9D;
+  }
+
+  .night-mode .toast {
+    background-color: #45a049;
+  }

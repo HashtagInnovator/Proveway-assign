@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import ProductOffer from './components/proveway'; 
 import './App.css';
+import './styles/nightmode.css';
+import './styles/contact.css';
 
 function App() {
+  const [nightMode, setNightMode] = useState(false);
+  const toggleNightMode = () => {
+    setNightMode(!nightMode);
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${nightMode ? 'night-mode' : ''}`}>
+      <div className="center-container">
+        <ProductOffer />
+      </div>
+      <button className="night-mode-toggle" onClick={toggleNightMode}>
+        {nightMode ? '🌞' : '🌙'}
+      </button>
+      <a 
+        href="mailto:chetanohri2000@gmail.com" 
+        className="contact-link"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Contact Me
+      </a>
     </div>
   );
 }
